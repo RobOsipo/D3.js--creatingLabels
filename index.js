@@ -14,10 +14,10 @@
      .data(dataset)
      .enter()
      .append("rect")
-     .attr("y", function(d) {
+     .attr("y", (d) => {
           return svgHeight - d 
      })
-     .attr("height", function(d) { 
+     .attr("height", (d) => { 
          return d; 
      })
      .attr("width", barWidth - barPadding)
